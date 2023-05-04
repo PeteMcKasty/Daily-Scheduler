@@ -64,7 +64,6 @@ $(function () {
     localStorage.setItem('hour-17', hourText17 + textarea17);
   })
 
-
   $(".time-block").each(function () {
     let currentTime = dayjs().hour()
     let timeBlock = parseInt($(this).attr("hour-9", "hour-10", "hour-11", "hour-12", "hour-13", "hour-14", "hour-15", "hour-16", "hour-17"));
@@ -75,7 +74,7 @@ $(function () {
     } else {
         $(this).addClass("future");
     }
-});
+  });
 
   $(document).ready(function() {
     let storedText9 = localStorage.getItem('hour-9');
