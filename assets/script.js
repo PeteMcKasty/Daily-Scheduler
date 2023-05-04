@@ -66,7 +66,7 @@ $(function () {
 
   $(".time-block").each(function () {
     let currentTime = dayjs().hour()
-    let timeBlock = parseInt($('#hour-9 div', '#hour-10 div', '#hour-11 div', '#hour-12 div', '#hour-13 div', '#hour-14 div', '#hour-15 div', '#hour-16 div', '#hour-17 div').val);
+    let timeBlock = parseInt($('#hour-9 div', '#hour-10 div', '#hour-11 div', '#hour-12 div', '#hour-13 div', '#hour-14 div', '#hour-15 div', '#hour-16 div', '#hour-17 div').val());
     if (timeBlock < currentTime) {
         $(this).addClass("past");
     } else if (timeBlock === currentTime) {
