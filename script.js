@@ -8,10 +8,53 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  $(".saveBtn").on("click", function () {
-    var scheduledItem = $("textarea.description").val();
-    var scheduledTime = $("div.py-3").val();
-    localStorage.setItem(scheduledTime, scheduledItem);
+  $("#hour-9 .saveBtn").on("click", function () {
+    let hourText9 = ""
+    hourText9 = $('#hour-9 .hour').text();
+    localStorage.setItem('hour-9', hourText9);
+  })
+  $("#hour-10 .saveBtn").on("click", function () {
+    let hourText10 = ""
+    hourText10 = $('#hour-10 .hour').text();
+    localStorage.setItem('hour-10', hourText10);
+  })  
+  $("#hour-11 .saveBtn").on("click", function () {
+    let hourText11 = ""
+    hourText11 = $('#hour-11 .hour').text();
+    localStorage.setItem('hour-11', hourText11);
+  })
+  $("#hour-12 .saveBtn").on("click", function () {
+    let hourText12 = ""
+    hourText12 = $('#hour-12 .hour').text();
+    localStorage.setItem('hour-12', hourText12);
+  })
+  $("#hour-13 .saveBtn").on("click", function () {
+    let hourText13 = ""
+    hourText13 = $('#hour-13 .hour').text();
+    localStorage.setItem('hour-13', hourText13);
+  })
+  $("#hour-14 .saveBtn").on("click", function () {
+    let hourText14 = ""
+    hourText14 = $('#hour-14 .hour').text();
+    localStorage.setItem('hour-14', hourText14);
+  })
+  $("#hour-15 .saveBtn").on("click", function () {
+    let hourText15 = ""
+    hourText15 = $('#hour-15 .hour').text();
+    localStorage.setItem('hour-15', hourText15);
+  })
+  $("#hour-16 .saveBtn").on("click", function () {
+    let hourText16 = ""
+    hourText16 = $('#hour-16 .hour').text();
+    localStorage.setItem('hour-16', hourText16);
+  })
+  $("#hour-17 .saveBtn").on("click", function () {
+    let hourText17 = ""
+    hourText17 = $('#hour-17 .hour').text();
+    localStorage.setItem('hour-17', hourText17);
+  })
+
+
   //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -33,7 +76,6 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
-});
   //
   // TODO: Add code to display the current date in the header of the page.
 });
